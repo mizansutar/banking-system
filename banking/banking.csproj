@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B7EB20E-26FC-41C7-B897-4818B7B0B05A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>banking</RootNamespace>
+    <AssemblyName>banking</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="balance.Designer.cs">
+      <DependentUpon>balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blance_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blance_page.Designer.cs">
+      <DependentUpon>blance_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="card_application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="card_application.Designer.cs">
+      <DependentUpon>card_application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="card_sttscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="card_sttscs.Designer.cs">
+      <DependentUpon>card_sttscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposit.Designer.cs">
+      <DependentUpon>deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loan_application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan_application.Designer.cs">
+      <DependentUpon>loan_application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log_upd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_upd.Designer.cs">
+      <DependentUpon>log_upd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opening.Designer.cs">
+      <DependentUpon>opening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paid_Loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paid_Loan.Designer.cs">
+      <DependentUpon>Paid_Loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="statement_show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statement_show.Designer.cs">
+      <DependentUpon>statement_show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statment.Designer.cs">
+      <DependentUpon>statment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transfer.Designer.cs">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="withdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="withdrawal.Designer.cs">
+      <DependentUpon>withdrawal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="balance.resx">
+      <DependentUpon>balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blance_page.resx">
+      <DependentUpon>blance_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="card_application.resx">
+      <DependentUpon>card_application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="card_sttscs.resx">
+      <DependentUpon>card_sttscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposit.resx">
+      <DependentUpon>deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan_application.resx">
+      <DependentUpon>loan_application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_upd.resx">
+      <DependentUpon>log_upd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opening.resx">
+      <DependentUpon>opening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paid_Loan.resx">
+      <DependentUpon>Paid_Loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="statement_show.resx">
+      <DependentUpon>statement_show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statment.resx">
+      <DependentUpon>statment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transfer.resx">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update.resx">
+      <DependentUpon>update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="withdrawal.resx">
+      <DependentUpon>withdrawal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
